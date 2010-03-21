@@ -9,4 +9,8 @@ class CalendarController < ApplicationController
     @event_strips = Event.event_strips_for_month(@shown_month)
   end
   
+  def day
+    redirect_to :controller => :events, :action => 'new'
+  end
+  
 end
