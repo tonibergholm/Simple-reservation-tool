@@ -1,0 +1,26 @@
+fi:
+    date:
+      formats:
+        # Use the strftime parameters for formats.
+        # When no format has been given, it uses default.
+        # You can provide other formats here if you like!
+        default: "%d.%m.%Y"
+        short: "%b %d"
+        long: "%B %d, %Y"
+
+      day_names: [Sunnuntai, Maanantai, Tiistai, Keskiviikko, Torstai, Perjantai, Lauantai]
+      abbr_day_names: [Su, Ma, Ti, Ke, To, Pe, La]
+
+      # Don't forget the nil at the beginning; there's no such thing as a 0th month
+      month_names: [~, Tammikuu, Helmikuu, Maaliskuu, Huhtikuu, Toukokuu, Kesäkuu, Heinäkuu, Elokuu, Syyskuu, Lokakuu, Marraskuu, Joulukuu]
+      abbr_month_names: [~, Tammi, Helmi, Maalis, Huhti, Touko, Kesä, Heinä, Elo, Syys, Loka, Marras, Joulu]
+      # Used in date_select and datime_select.
+      order: [ :day, :month, :year ]
+
+    time:
+      formats:
+        default: "%a, %d %b %Y %H:%M:%S %z"
+        short: "%d %b %H:%M"
+        long: "%B %d, %Y %H:%M"
+      am: "am"
+      pm: "pm"
