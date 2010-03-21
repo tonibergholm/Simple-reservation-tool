@@ -13,7 +13,8 @@ module CalendarHelper
       :previous_month_text => "<< " + month_link(@shown_month.last_month),
       :next_month_text => month_link(@shown_month.next_month) + " >>",
       :use_all_day => true,
-      :link_to_day_action => "day"
+      :link_to_day_action => "day",
+      :first_day_of_week => @first_day_of_week
     }
   end
 
