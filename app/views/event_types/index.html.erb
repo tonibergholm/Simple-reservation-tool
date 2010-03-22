@@ -1,0 +1,25 @@
+<% title "Event Types" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Duration</th>
+    <th>Color</th>
+    <th>Location</th>
+    <th>Description</th>
+  </tr>
+  <% for event_type in @event_types %>
+    <tr>
+      <td><%=h event_type.name %></td>
+      <td><%=h event_type.duration %></td>
+      <td><%=h event_type.color %></td>
+      <td><%=h event_type.location %></td>
+      <td><%=h event_type.description %></td>
+      <td><%= link_to "Show", event_type %></td>
+      <td><%= link_to "Edit", edit_event_type_path(event_type) %></td>
+      <td><%= link_to "Destroy", event_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Event Type", new_event_type_path %></p>

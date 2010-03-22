@@ -1,0 +1,13 @@
+one:
+  name: MyString
+  duration: 1.5
+  color: MyString
+  location: MyString
+  description: MyText
+
+two:
+  name: MyString
+  duration: 1.5
+  color: MyString
+  location: MyString
+  description: MyText

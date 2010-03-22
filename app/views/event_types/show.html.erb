@@ -1,0 +1,28 @@
+<% title "Event Type" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @event_type.name %>
+</p>
+<p>
+  <strong>Duration:</strong>
+  <%=h @event_type.duration %>
+</p>
+<p>
+  <strong>Color:</strong>
+  <%=h @event_type.color %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%=h @event_type.location %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @event_type.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_event_type_path(@event_type) %> |
+  <%= link_to "Destroy", @event_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", event_types_path %>
+</p>
